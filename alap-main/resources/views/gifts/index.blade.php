@@ -15,6 +15,15 @@
             <p>{{session('success')}}</p>
         @endif
 
+        <h3>Gifts: </h3>
+        <ul>
+            @foreach ($gifts as $gift)
+                <li>
+                    <b>Gift name:</b> {{$gift->gift_name}} <br>
+                    <b>Price:</b> {{$gift->price}}
+                </li>
+            @endforeach
+        </ul>
         
 
     </body>

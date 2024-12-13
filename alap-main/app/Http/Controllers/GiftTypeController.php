@@ -20,12 +20,14 @@ class GiftTypeController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        /*$request->validate([
             'type_name' => 'required|string|max:255'
         ]);
 
         GiftType::create($request->all());
         //return redirect()->back()->with('success', 'okeka');
+        return view('gift_types.index');
+        */
         return view('gift_types.index');
     }
 }
