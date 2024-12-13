@@ -12,4 +12,5 @@ class GiftType extends Model
     {
         return $this->hasMany(Gift::class);
     }
+
 }
