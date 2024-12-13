@@ -15,7 +15,7 @@
             <p>{{session('success')}}</p>
         @endif
 
-        <form method="{{route('gift_types.store')}}" action="POST">
+        <form method="{{route('gift_types.store')}}" action="post">
             @csrf
             <label for="type_name">Gift type: </label> <br>
             <input type="text" name="type_name" id="type_name">

@@ -12,4 +12,5 @@ class People extends Model
     {
         return $this->hasMany(Wishlist::class);
     }
+
 }

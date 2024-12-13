@@ -9,7 +9,8 @@ class GiftTypeController extends Controller
 {
     public function index() 
     {
-        return view('gift_types.index');
+        $gift_types = GiftType::all();
+        return view('gift_types.index', compact('gift_types'));
     }
 
     public function create() 
